@@ -83,14 +83,15 @@ function Login() {
   return (
     <>
       <section className="flex flex-1 h-screen">
+        {/* 왼쪽영역 */}
         <div className="flex-1 p-24 bg-black text-white py-24 relative">
           <p className="absolute bottom-48 left-7 text-6xl font-light">
             lumière de l&lsquo;aube
           </p>
-          <p className="absolute bottom-32 left-8 font-thin">
-            Lorem Ipsum is simply dummy text of the printing and tyunce with
-            <br></br>
-            righteous indignation and dislike men who are so beguiled and
+          <p className="absolute bottom-32 left-8 font-thin w-[500px]">
+            We hope this will be a space where you can explore the fascinating
+            world of posters with us and share sensuous emotions and
+            inspiration.
           </p>
           <div className="flex">
             <div className={S.solid}></div>
@@ -98,6 +99,7 @@ function Login() {
             <div className={S.solid}></div>
           </div>
         </div>
+        {/* 오른쪽영역 */}
         <div className="flex-1 px-24 flex flex-col items-center justify-center bg-white z-10">
           <form
             onSubmit={onSubmit}
@@ -141,8 +143,7 @@ function Login() {
                 )}
               </div>
               {!isPasswordValid && (
-                <span className="text-red-600">
-                  <br></br>
+                <span className="text-red-600 text-sm">
                   비밀번호는 10자 이상, 특수문자 하나이상을 입력해 주세요
                 </span>
               )}

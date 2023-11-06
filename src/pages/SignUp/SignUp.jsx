@@ -251,16 +251,16 @@ function SignUp() {
 
   return (
     <>
-      <section className="h-screen">
+      <section className="flex flex-1 h-screen">
         {/* 왼쪽영역 */}
-        <div className="p-24 overflow-hidden bg-black text-white w-1/2 h-screen py-24 fixed top-0 left-0">
+        <div className="flex-1 p-24 bg-black text-white py-24 relative">
           <p className="absolute bottom-48 left-7 text-6xl font-light">
             lumière de l&lsquo;aube
           </p>
-          <p className="absolute bottom-32 left-8 font-thin">
-            Lorem Ipsum is simply dummy text of the printing and tyunce with
-            <br></br>
-            righteous indignation and dislike men who are so beguiled and
+          <p className="absolute bottom-32 left-8 font-thin w-[500px]">
+            We hope this will be a space where you can explore the fascinating
+            world of posters with us and share sensuous emotions and
+            inspiration.
           </p>
           <div className="flex">
             <div className={S.solid}></div>
