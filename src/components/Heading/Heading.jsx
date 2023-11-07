@@ -25,7 +25,7 @@ function Heading() {
     <div className={S.headingWrapper}>
       <div className={`${S.logoSection} ${logoSectionClass}`}>
         <Link
-          to="/lumieleu/"
+          to="/"
           className={location.pathname === '/lumieleu/' ? '' : 'font-bold'}
         >
           lumière <br /> de l&#39;aube

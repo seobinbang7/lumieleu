@@ -316,7 +316,7 @@ function SelectedProduct() {
       <div className="ml-[32rem]">
         <Link
           to={
-            selectedCartData.length === 0 ? '/lumieleu/cart' : '/lumieleu/order'
+            selectedCartData.length === 0 ? '/cart' : '/order'
           }
         >
           <button
