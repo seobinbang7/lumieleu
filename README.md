@@ -1,4 +1,4 @@
-#새벽의 빛 LUMIÉRE DE LAUBE 르미아 더 오브
+# 새벽의 빛 LUMIÉRE DE LAUBE 르미아 더 오브
 "일상 속 색을 담다." 김민지 작가의 작품들을 소장함으로서 고객들에게 전시장에서 작품을 감상하듯 한 특별한 경험을 선사하는 포스터 쇼핑몰입니다
 
 ##목차
@@ -6,10 +6,10 @@
 2.[담당 구현 페이지](#2.-담당-구현-페이지)
 3.[기술스택](#3.-기술스택)
 
-##1. 팀원
+## 1. 팀원
 
 
-##2. 담당 구현 페이지
+## 2. 담당 구현 페이지
 
 |팀원|담당 구현 페이지|
 |------|---|
@@ -19,7 +19,7 @@
 |테스트1|테스트2|
 |테스트1|테스트2|
 
-##3. 기술스택
+## 3. 기술스택
 
 <img src="https://img.shields.io/badge/git-#F05032?style=flat-square&logo=git&logoColor=white"/>
 <img src="https://img.shields.io/badge/github-#181717?style=flat-square&logo=github&logoColor=white"/>
