@@ -41,7 +41,7 @@
 
 <details>
   <summary>github wiki</summary> 
-  <a href="https://github.com/seobinbang7/lumieleu/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80%EB%B3%84-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84-%EC%86%8C%EA%B0%9C/">페이지별 작업 소개</a>
+  <a href="https://github.com/seobinbang7/lumieleu/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80%EB%B3%84-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84-%EC%86%8C%EA%B0%9C/">페이지별 기능 구현 소개</a>
 </details>
 
 
