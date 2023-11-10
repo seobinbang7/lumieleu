@@ -18,11 +18,11 @@
 
 |팀원|담당 구현 페이지|
 |------|---|
-|방서빈|장바구니, 주문페이지|
-|신동혁|테스트2|
-|신현주|테스트2|
-|송영은|테스트2|
-|정민지|테스트2|
+|방서빈|장바구니, 주문페이지&결제|
+|신동혁|메인, 상품목록, 헤더, 푸터|
+|신현주|마이페이지|
+|송영은|회원가입, 로그인|
+|정민지|상품 상세페이지|
 
 ## 기술스택
 
@@ -41,7 +41,7 @@
 
 <details>
   <summary>github wiki</summary> 
-  [페이지별 작업 소개](https://github.com/seobinbang7/lumieleu/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80%EB%B3%84-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84-%EC%86%8C%EA%B0%9C/)
+  <a href="https://github.com/seobinbang7/lumieleu/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80%EB%B3%84-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84-%EC%86%8C%EA%B0%9C/">페이지별 작업 소개</a>
 </details>
 
 
