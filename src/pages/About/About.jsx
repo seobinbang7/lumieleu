@@ -5,11 +5,11 @@ export default function About() {
     <main className="h-screen flex items-center justify-center">
       <section className="flex gap-7 items-end mb-1">
         <div className="font-normal flex flex-col justify-end">
-          <h2 className="text-4xl my-3">일상 속 색을 담다</h2>
+          <h2 className="text-3xl my-3">일상 속 색을 담다</h2>
           <h3 className="text-xl font-extralight mb-5">
             capture everyday colors
           </h3>
-          <p className="w-[430px]">
+          <p className="text-sm w-[400px]">
             LUMIÉRE DE LAUBE (르미아 더 오브)는 포스터를 판매하는 곳이지만,
             우리의 목표는 단순히 제품을 판매하는 것을 넘어서서 고객들에게
             전시장에서 작품을 감상하듯 한 특별한 경험을 선사하는 것입니다.{' '}
@@ -24,7 +24,7 @@ export default function About() {
             수 있는 공간이 되길 바랍니다.
           </p>
         </div>
-        <img src={about} alt="일상 속 색을 담다" className="w-[800px]" />
+        <img src={about} alt="일상 속 색을 담다" className="w-[700px]" />
       </section>
     </main>
   );
