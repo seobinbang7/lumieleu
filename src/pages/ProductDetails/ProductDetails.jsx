@@ -1,11 +1,10 @@
-import OrderExchange from '@/components/ProductDetails/OrderExchange';
-
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import useProductItem from '@/utils/useProductItem';
 import { getPbImageURL } from '@/utils';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import OrderExchange from '@/components/ProductDetails/OrderExchange';
 
 export default function ProductDetails() {
   const { productId } = useParams();
@@ -43,13 +42,13 @@ export default function ProductDetails() {
   }
 
   return (
-    <main className="h-screen flex items-center justify-center">
+    <main className="h-screen relative flex items-center justify-center">
       {/* 제품 이미지와 캡션 */}
       <figure className="m-10">
         <img
           src={getPbImageURL(data, 'image')}
           alt={data.title}
-          className="w-[350px]"
+          className="w-80"
         />
         <figcaption className="mt-1">
           {data.title} <br /> photo by {data.photographer} <br />
@@ -58,13 +57,13 @@ export default function ProductDetails() {
       </figure>
 
       {/* 제품 설명 및 상세 정보 */}
-      <section className="w-[320px] h-[573px] flex flex-col">
+      <section className="w-72 h-[555px] flex flex-col">
         {/* 제품 설명 */}
-        <article className="h-[322px] flex-grow text-justify">
+        <article className="flex-grow text-base text-justify">
           {data.description}
         </article>
         {/* 제품 상세 정보 */}
-        <section className="mb-4">
+        <section className="mb-4 text-sm">
           {/* 제목 */}
           <h3 className="border-b-2 border-gray-600 mb-2 pb-2">{data.title}</h3>
 
