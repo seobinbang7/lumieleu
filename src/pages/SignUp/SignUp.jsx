@@ -63,12 +63,11 @@ const checkIfIdOrEmailExists = async (username, email) => {
     });
 
     const emailExists = await pb.collection('users').getList(1, 50, {
-      // filter: `email = "${email}"`,
+      emailVisibility: true,
+      filter: `email = "${email}"`,
     });
-
-    console.log(emailExists);
-
     return {
+      // totalItems 존재여부확인후 조건처리
       idExists: idExists.totalItems,
       emailExists: emailExists.totalItems,
     };
@@ -127,20 +126,12 @@ function SignUp() {
       toast.error('비밀번호가 일치하지 않습니다!', { duration: 1000 });
       throw new Error('비밀번호가 일치하지 않습니다!');
     }
-    // 존재하는 아이디 toast.error('ID가 존재합니다.', { duration: 1000 })
 
-    // const isIdExists = await checkIfIdExists(username);
-    // if (isIdExists) {
-    //   toast.error('ID가 이미 존재합니다.', { duration: 1000 });
-    //   throw new Error('ID가 이미 존재합니다.');
-    // }
     // 아이디와 이메일이 이미 존재하는지 확인
     const { idExists, emailExists } = await checkIfIdOrEmailExists(
       username,
       email
     );
-    console.log(idExists);
-    console.log(emailExists);
 
     if (idExists) {
       toast.error('ID가 이미 존재합니다.', { duration: 1000 });
@@ -152,19 +143,6 @@ function SignUp() {
       throw new Error('이미 존재하는 이메일입니다.');
     }
   };
-
-  // const checkIfIdExists = async (username) => {
-  //   //  서버와 통신하여 아이디 존재 여부확인
-  //   const usersListData = await pb.collection('users').getList(1, 50, {
-  //     filter: `username = "${username}"`,
-  //   });
-  //   //  usersListData 가 존재하면 true 설정
-  //   if (usersListData.totalItems) {
-  //     return true;
-  //   } else {
-  //     return false;
-  //   }
-  // };
 
   // 전송버튼 클릭시
   const signUp = useAuthStore((state) => state.signUp);
@@ -181,7 +159,6 @@ function SignUp() {
     } catch (error) {
       console.error('Error during registration:', error);
     }
-    // console.log(formState);
   };
 
   useEffect(() => {
@@ -215,7 +192,6 @@ function SignUp() {
       id: 'ageConfirmation',
       labelText: '[선택] 쇼핑정보 수신 동의',
       className: 'mr-1',
-      required: true,
       name: 'ageConfirmation',
       checked: false,
     },
