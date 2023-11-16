@@ -43,6 +43,13 @@ export default function ProductDetails() {
 
   return (
     <main className="h-screen relative flex items-center justify-center">
+      <Link to={`/lumieleu/gallery`} className="absolute left-28">
+        <img
+          src="../../../public/imgs/BackArrow.svg"
+          alt="이전 페이지"
+          className="w-14"
+        />
+      </Link>
       {/* 제품 이미지와 캡션 */}
       <figure className="m-10">
         <img
