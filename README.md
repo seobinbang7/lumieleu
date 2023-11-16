@@ -22,7 +22,7 @@
 |신동혁|메인, 상품목록, 헤더, 푸터|
 |신현주|마이페이지, 프로필 수정|
 |송영은|회원가입, 로그인|
-|정민지|상품 상세페이지|
+|정민지|상품 상세페이지, about|
 
 ## 기술스택
 
@@ -41,7 +41,7 @@
 
 <details>
   <summary>github wiki</summary> 
-  <a href="https://github.com/seobinbang7/lumieleu/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80%EB%B3%84-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84-%EC%86%8C%EA%B0%9C/">페이지별 기능 구현 소개</a>
+  <a href="https://github.com/seobinbang7/lumieleu/wiki/%5B%ED%8E%98%EC%9D%B4%EC%A7%80%5D-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84-%EC%86%8C%EA%B0%9C/">[페이지] 기능 구현 소개</a>
 </details>
 
 
