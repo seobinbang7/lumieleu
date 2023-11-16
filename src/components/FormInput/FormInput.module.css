@@ -5,7 +5,7 @@
   @apply font-medium w-[7.8125rem]  block flex-shrink-0;
 }
 .input {
-  @apply border w-full px-3 h-[2.8125rem]  block pl-5;
+  @apply border w-full px-3 h-[2.8125rem]  block pl-5 text-sm;
 }
 
 .inputWrapper {
