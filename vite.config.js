@@ -46,7 +46,6 @@ export default defineConfig({
   },
   // 빌드 시, 청크 파일 생성 매뉴얼 구성
   build: {
-    outDir: 'build',
     rollupOptions: {
       output: {
         manualChunks: {
