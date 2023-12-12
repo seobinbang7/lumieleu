@@ -9,8 +9,8 @@ function Heading() {
     switch (location) {
       case '/':
         return [S.textWhite, S.textWhite];
-      case '/lumieleu/login':
-      case '/lumieleu/signup':
+      case '/login':
+      case '/signup':
         return [S.bgBlack, S.bgWhite];
       default:
         return [S.bgWhite, S.bgWhite];
