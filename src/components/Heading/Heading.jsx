@@ -7,7 +7,7 @@ function Heading() {
 
   const getSectionClass = (location) => {
     switch (location) {
-      case '/lumieleu/':
+      case '/':
         return [S.textWhite, S.textWhite];
       case '/lumieleu/login':
       case '/lumieleu/signup':
