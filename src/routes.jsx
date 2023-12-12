@@ -13,7 +13,7 @@ import EditProfile from './pages/EditProfile/EditProfile';
 
 const router = createHashRouter([
   {
-    path: '/',
+    path: '/lumielu',
     element: <RootLayout />,
     children: [
       { index: true, element: <Home /> },
