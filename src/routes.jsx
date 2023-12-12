@@ -1,40 +1,55 @@
-import { lazy } from 'react';
-import {
-  Route,
-  createBrowserRouter,
-  createRoutesFromElements,
-} from 'react-router-dom';
+import { createHashRouter } from 'react-router-dom';
+import RootLayout from './layout/RootLayout/RootLayout';
+import Home from './pages/Home/Home';
+import Cart from './pages/Cart/Cart';
+import Order from './pages/Order/Order';
+import LogIn from './pages/LogIn/LogIn';
+import SignUp from './pages/SignUp/SignUp';
+import ProductDetails from './pages/ProductDetails/ProductDetails';
+import Gallery from './pages/Gallery/GalleryPage';
+import About from './pages/About/About';
+import Mypage from './pages/MyPage/MyPage';
+import EditProfile from './pages/EditProfile/EditProfile';
 
-const RootLayout = lazy(() => import('@/layout/RootLayout/RootLayout'));
-const Home = lazy(() => import('@/pages/Home/Home'));
-const Cart = lazy(() => import('@/pages/Cart/Cart'));
-const Order = lazy(() => import('@/pages/Order/Order'));
-const LogIn = lazy(() => import('@/pages/LogIn/LogIn'));
-const SignUp = lazy(() => import('@/pages/SignUp/SignUp'));
-const ProductDetails = lazy(() =>
-  import('@/pages/ProductDetails/ProductDetails')
-);
-const Gallery = lazy(() => import('@/pages/Gallery/GalleryPage'));
-const About = lazy(() => import('@/pages/About/About'));
-const MyPage = lazy(() => import('@/pages/MyPage/MyPage'));
-const EditProfile = lazy(() => import('@/pages/EditProfile/EditProfile'));
-
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<RootLayout />}>
-      <Route index element={<Home />} />
-      <Route path="cart" element={<Cart />} />
-      <Route path="order" element={<Order />} />
-      <Route path="login" element={<LogIn />} />
-      <Route path="productdetails/:productId" element={<ProductDetails />} />
-      <Route path="signup" element={<SignUp />} />
-      <Route path="productdetails" element={<ProductDetails />} />
-      <Route path="gallery" element={<Gallery />} />
-      <Route path="about" element={<About />} />
-      <Route path="mypage" element={<MyPage />} />
-      <Route path="editprofile" element={<EditProfile />} />
-    </Route>
-  )
-);
+const router = createHashRouter([
+  {
+    path: '/',
+    element: <RootLayout />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: 'cart', element: <Cart /> },
+      {
+        path: 'order',
+        element: (
+          <Order />
+        ),
+      },
+      {
+        path: 'login',
+        element: (
+          <LogIn />
+        ),
+      },
+      {
+        path: 'signup',
+        element: (
+          <SignUp />
+        ),
+      },
+      { path: 'productdetails/:productId', element: <ProductDetails /> },
+      { path: 'signup', element: <SignUp /> },
+      { path: 'productdetails', element: <ProductDetails /> },
+      {
+        path: 'gallery',
+        element: (
+          <Gallery />
+        ),
+      },
+      { path: 'about', element: <About /> },
+      { path: 'mypage', element: <Mypage /> },
+      { path: 'editprofile', element: <EditProfile /> },
+    ],
+  },
+]);
 
 export default router;

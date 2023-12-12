@@ -12,7 +12,6 @@
     "pocketbase": ".\\pocketbase\\pocketbase serve",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "homepage": "https://seobinbang7.github.io/lumieleu/"
   },
