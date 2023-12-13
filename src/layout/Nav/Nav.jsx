@@ -71,7 +71,7 @@ function Nav() {
                   LOGOUT
                 </div>
               ) : (
-                <Link to="login" className={activeClass(category)}>
+                <Link to="/login" className={activeClass(category)}>
                   LOGIN
                 </Link>
               )}
