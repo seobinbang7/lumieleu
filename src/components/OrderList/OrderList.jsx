@@ -259,7 +259,7 @@ function OrderList() {
             'aria-live': 'polite',
           },
         });
-        navigate('/lumieleu/mypage');
+        navigate('/mypage');
       } catch (error) {
         console.error(error);
         toast.error('결제에 실패했습니다', {
