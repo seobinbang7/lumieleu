@@ -22,7 +22,7 @@ export default function About() {
             수 있는 공간이 되길 바랍니다.
           </p>
         </div>
-        <img src="/assets/about.jpg" alt="일상 속 색을 담다" className="w-[800px]" />
+        <img src="../../assets/about.jpg" alt="일상 속 색을 담다" className="w-[800px]" />
       </section>
     </main>
   );
