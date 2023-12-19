@@ -252,7 +252,7 @@ function SelectedProduct() {
         </li>
       </ul>
       <div>
-        {cartItems.length === 0 && !isLoading ? (
+        {cartItems.length === 0 && dataItems.length === 0 && !isLoading ? (
           <>
             <div className="w-[960px] border-t-2 border-black ml-6"></div>
             <div className="h-[20rem] flex flex-col justify-center items-center">

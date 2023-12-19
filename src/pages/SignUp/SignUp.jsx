@@ -79,6 +79,7 @@ const checkIfIdOrEmailExists = async (username, email) => {
 };
 
 function SignUp() {
+
   /* Input 사용자 입력 값 감지 */
   const initalState = {
     username: '',
@@ -248,6 +249,7 @@ function SignUp() {
     setCheckboxData(updatedCheckboxData);
   };
   const id = useId();
+
 
   return (
     <>
