@@ -42,7 +42,7 @@ function IndexPage() {
         muted
         style={{ objectFit: 'cover' }}
       >
-        <source src="/videos/mainVideo.mp4" type="video/mp4" />
+        <source src="/videos/mainVideo" type="video/mp4" />
       </video>
       <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full">
         <p className="font-serif text-4xl text-center text-white">
