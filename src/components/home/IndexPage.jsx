@@ -40,6 +40,7 @@ function IndexPage() {
         autoPlay
         loop
         muted
+        style={{ objectFit: 'cover' }}
       >
         <source src="/videos/mainVideo.mp4" type="video/mp4" />
       </video>
